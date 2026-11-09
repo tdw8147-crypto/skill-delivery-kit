@@ -1,24 +1,24 @@
 ---
 name: reactive-form-input
-description: 表单显示文字但应用状态未同步时，交付分层的输入生效记录。
+description: Use when a form shows your text but the app state has not caught up - deliver a layered record of which inputs actually took effect.
 ---
-## 先交付
-根据现有页面和操作证据写记录，不提交业务表单：
-- 目标字段：标签/可访问名称、所在表单、页面版本及期望格式。
-- 操作与观察：输入方式、观察时点、显示值匹配情况（敏感值脱敏）。
-- 应用信号：校验提示、关联按钮或派生字段状态及证据定位。
-- 结论：已生效 / 未生效 / 校验中 / 未验证，分别写已知与缺口。
-- 下一步：一个必要观察或正常交互及有界完成条件；已生效则停止。
-## 必要边界
-1. 排除隐藏副本与同名搜索框，确认字段可见、可编辑；遮挡或禁用记录原因。
-2. 正常填充或键盘输入优先，替换前明确清空行为；保留要求的格式与单位。
-3. 不只改DOM属性就称成功，保留控件限制并遵循正常校验流程。
-4. 显示值与应用接受信号分别记录；值对但校验未同步不能称已生效。
-5. 等待业务状态而非仅加载完成，限定时间/次数；异步校验中不判最终失败。
-6. 仅在正常流程允许时失焦，不点最终提交来测试，不使用未经证实的事件序列。
-7. 导航后重取定位，不用失效句柄重复动作；格式被拒保留提示，不擅改业务值。
-8. 缺页面能力照样交记录，标未验证；资料模拟中不把建议操作写成实际操作。
-9. 必须提交才能观察时说明限制并停止；未知业务提交结果只查询原请求，不重放。
-## 交付即止
-本技能不点击最终提交；输入生效不等于业务已提交。
-若使用草稿/提交工具，读必要资料后写完整记录并正式提交，可同轮顺序完成。
+## Deliver first
+Write the record from the existing page and interaction evidence; do not submit the business form:
+- Target field: label/accessible name, the form it belongs to, page version and expected format.
+- Action and observation: input method, moment of observation, whether the displayed value matched (mask sensitive values).
+- App signals: validation message, linked button or derived-field state, and where that evidence sits.
+- Conclusion: effective / not effective / validating / unverified - list what is known and what is missing for each.
+- Next step: one required observation or normal interaction, with a bounded completion signal; stop if effective.
+## Required boundaries
+1. Rule out hidden duplicates and same-named search boxes; confirm the field is visible and editable; record the reason if covered or disabled.
+2. Prefer normal fill or keyboard input; state the clear behavior before replacing; keep required formats and units.
+3. Never call it success after only changing DOM properties; keep the control limits and follow the normal validation flow.
+4. Record the displayed value and the app-accepted signal separately; right value with unsynced validation is not effective.
+5. Wait for business state, not just page load, within a time/attempt limit; do not judge final failure while async validation runs.
+6. Blur only if the normal flow allows it; do not click final submit to test; do not use unproven event sequences.
+7. Re-locate after navigation; never repeat actions on stale handles; keep format rejections as-is and do not silently change business values.
+8. Deliver the record even without page access, marked unverified; in simulated material, never write suggested actions as performed.
+9. If observing requires submission, state the limit and stop; for an unknown submission outcome, query the original request only - never replay.
+## Stop at delivery
+This skill does not click final submit; an effective input is not a submitted business request.
+If draft/submit tools are provided, read the needed material, write the full record and submit it - same round, in order.
