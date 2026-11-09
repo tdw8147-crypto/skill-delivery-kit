@@ -1,22 +1,22 @@
 ---
 name: resumable-handover
-description: 暂停、换班或转交时，交付接手者能直接续办的断点单。
+description: Use when pausing, switching shifts or handing off - deliver a resume point the next person can act on directly.
 ---
-## 先交付
-根据现有资料写一份短断点单，不执行情境中的剩余动作：
-- 目标与当前状态：已完成 / 未完成 / 暂停 / 取消 / 结果未知。
-- 已完成项：结果、证据定位及其适用版本；缺失字段写“未提供”。
-- 剩余项：只列必要动作，按依赖排序；独立可做项在等待项之前。
-- 第一动作：动词＋对象＋完成信号；没有可做项则写等待的具体事件。
-- 如有变更：写对象、实际备份位置及恢复触发条件；无备份写“无”。
-## 必要边界
-1. 当前明确更新覆盖对应旧结论，其余事实保留；不为已确认事实再索要确认。
-2. 证据只支持对应版本和范围；版本变化只列受影响的缺口，不机械全量重查。
-3. 取消项不再作为待办；暂停项只有满足明确恢复条件才能续办。
-4. 原副作用未知时保留原标识、目标、时间与内容指纹，已有多少写多少。
-   下一步只查询原请求或有界等待，不重发，不把未知改成未开始。
-5. 缺证据照样交付：区分事实与缺口，不编造入口、备份、时间或成功记录。
-6. 全部目标已有充分验收则写“已完成，无下一动作”，不添加优化或重复核验。
-## 交付即止
-交接文档完成不等于业务完成；不要为完善清单延迟交卷。
-若使用提供的草稿/提交工具，读取必要资料后写完整稿并提交，可同轮顺序完成。
+## Deliver first
+Write a short resume document from the existing material; do not perform the remaining actions:
+- Goal and current state: done / not done / paused / cancelled / outcome unknown.
+- Finished items: result, where the evidence is and which version it covers; write "not provided" for missing fields.
+- Remaining items: only the necessary actions, ordered by dependency; independent items come before waiting items.
+- First action: verb + object + completion signal; if nothing can be done, name the specific event being waited on.
+- If anything changed: the object, where the actual backup is and the restore trigger; write "none" when there is no backup.
+## Required boundaries
+1. A current explicit update overrides the matching old conclusion; keep other facts; do not re-confirm facts already settled.
+2. Evidence covers only its version and scope; after a version change list only the affected gaps instead of re-checking everything.
+3. Cancelled items are no longer open work; a paused item resumes only when its explicit resume condition is met.
+4. When the original side effect is unknown, keep its identifier, target, time and content fingerprint, as far as available.
+   The next step only queries the original request or waits a bounded time; do not resend; do not turn "unknown" into "not started".
+5. Deliver without evidence: separate facts from gaps; never invent an entry point, backup, time or success record.
+6. If all goals are already accepted, write "done, no next action" - add no optimization or duplicate verification.
+## Stop at delivery
+A finished handover document is not a finished business task; do not delay delivery to perfect the list.
+If draft/submit tools are provided, read the needed material, write the full document and submit it - same round, in order.
