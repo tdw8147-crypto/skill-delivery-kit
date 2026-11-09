@@ -34,14 +34,14 @@ Seven paid skills at **US$4.9 each**; the complete **US$14.9 bundle** includes a
 - **document-format-triage** — Identify document structure before choosing field, native-editing or image-based processing.
 - **parallel-task-contract** — Create a self-contained task contract without relying on the main conversation.
 
-[Buy a skill or the complete bundle]({{BUY_URL}})
+**[Buy the complete bundle (US$14.9)](https://claudemodeskills.lemonsqueezy.com/checkout/buy/fb481b12-0fa4-4e0d-a856-128f28ad4eb1)** · [All products](https://claudemodeskills.lemonsqueezy.com)
 
-Purchase link pending; checkout is not live in this draft. Prices are listed in USD; final checkout tax handling must be specified by the storefront. Paid content is not licensed by this repository's MIT license.
+Prices are listed in USD; final checkout tax handling must be specified by the storefront. Paid content is not licensed by this repository's MIT license.
 
 ## Evidence and limits
 In internal simulated tests (low-cost GPT and DeepSeek models, model-graded, small samples), the share of tasks fully correct on the first delivery rose from about 25% to 80% for GPT and from 76% to 100% for DeepSeek, averaged across the 10 skills. Results vary by task; this is not a guarantee.
 
 ## 中文说明
-让 ChatGPT/Codex、DeepSeek 像 Claude 一样直接交付、少反问少免责。三份免费样品完整可用；七份付费技能各 $4.9，十份合集 $14.9。技能把已有资料组织成可用交付物，不代替执行或授权；保留必要澄清和真实限制。购买入口：{{BUY_URL}}（待填）。
+让 ChatGPT/Codex、DeepSeek 像 Claude 一样直接交付、少反问少免责。三份免费样品完整可用；七份付费技能各 $4.9，十份合集 $14.9。技能把已有资料组织成可用交付物，不代替执行或授权；保留必要澄清和真实限制。购买入口：https://claudemodeskills.lemonsqueezy.com
 
 内部模拟测试（便宜档 GPT 与 DeepSeek、同模型模拟评审、小样本）中，首次交付全部达标率 GPT 平均约 25%→80%、DeepSeek 约 76%→100%（10 个技能平均）。实际效果因任务而异，不作保证。
