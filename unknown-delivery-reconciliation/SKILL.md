@@ -1,23 +1,23 @@
 ---
 name: unknown-delivery-reconciliation
-description: 提交后回执不明时，交付原请求的投递状态核对记录，避免重复投递。
+description: Use when a submission receipt is unclear - deliver a delivery-status record for the original request without sending it again.
 ---
-## 先交付
-依据现有证据输出一份短记录，不要求先补齐所有字段：
-- 原请求：标识、目标、提交时间、提交时内容/附件指纹；缺项写“未提供”。
-- 最后观察：查询时间、入口、原状态及渠道对该状态的定义。
-- 结论：已受理 / 已发送 / 已送达 / 已读 / 明确未发生 / 结果未知。
-- 依据与缺口：指出哪些证据属于原请求，哪些无法归属。
-- 下一步：未满足验收时只列一个原请求查询动作及有界次数/到期条件；已满足则结案。
-## 必要边界
-1. 同一意图不重放，不换标识重投，不再次点击测试，不假定同标识远端幂等。
-2. 身份以提交时目标、时间和字节指纹为准；同名新附件或相似文本不能替代。
-3. 优先采纳匹配原身份的最新正式查询；排除另一目标、另一请求和范围不符的记录。
-4. accepted、sent、delivered、read按渠道定义分别报告，不能升级回执层级。
-5. 超时、可能受理后报错、本地计数为零或查无记录，不单独证明未发送。
-6. 证据冲突无法归属就写未知；缺查询能力也直接交记录，不等待澄清才交卷。
-7. 最新可信回执已达到用户验收层级，就停止；只需送达时不制造等待已读待办。
-## 交付即止
-本skill交付核对记录，不执行首次投递；文档提交不是重新发送业务请求。
-模拟任务只用已给资料，不实际查询渠道；下一查询写为建议，不能冒充已执行。
-若使用提供的草稿/提交工具，先写完整稿再提交，可同轮顺序完成。
+## Deliver first
+Output a short record from the existing evidence; do not wait to fill every field first:
+- Original request: identifier, target, submit time, fingerprint of the content/attachment at submit; write "not provided" for missing items.
+- Last observation: query time, entry point, the original status and how the channel defines that status.
+- Conclusion: accepted / sent / delivered / read / definitely not sent / outcome unknown.
+- Basis and gaps: which evidence belongs to the original request and which cannot be attributed to it.
+- Next step: if acceptance is unmet, list one query of the original request with a bounded count or expiry; if met, close it.
+## Required boundaries
+1. Never replay the same intent, never resend under a new identifier, never click a test again, never assume the far end is idempotent per identifier.
+2. Identity means the target, time and byte fingerprint at submit; a same-named new attachment or similar text cannot replace it.
+3. Prefer the latest formal query that matches the original identity; exclude other targets, other requests and records outside the scope.
+4. Report accepted, sent, delivered and read separately as the channel defines them; never upgrade a receipt level.
+5. A timeout, an error after possible acceptance, a zero local counter or no record found does not alone prove nothing was sent.
+6. If evidence conflicts and cannot be attributed, write unknown; without query access still deliver the record instead of waiting for clarification.
+7. When the latest trusted receipt meets the user's acceptance level, stop; if only delivery is required, create no wait-for-read todo.
+## Stop at delivery
+This skill delivers a reconciliation record and performs no first send; submitting the document is not resending the business request.
+In simulated tasks use only the given material and query no real channel; write the next query as a suggestion, never as executed.
+If draft/submit tools are provided, write the full draft first, then submit it - same round, in order.
