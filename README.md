@@ -1,47 +1,99 @@
 # Skill Delivery Kit
+Make Codex, ChatGPT and DeepSeek deliver a usable first draft — fewer clarification loops, less boilerplate, clearer next actions.
 
-Help ChatGPT/Codex and DeepSeek deliver directly, more like Claude, with fewer unnecessary follow-up questions and disclaimers.
+![License: MIT](https://img.shields.io/badge/license-MIT-green) ![Skills: 10](https://img.shields.io/badge/skills-10-blue) ![Models: GPT / DeepSeek](https://img.shields.io/badge/models-GPT%20%7C%20DeepSeek-purple)
 
-Ten compact text skills turn existing context into concrete handovers, specifications, diagnosis cards and evidence-bounded reports. They preserve necessary questions and accurate limits. The supplied skill bodies are in Chinese; this README is bilingual.
+Ten compact skills for getting concrete artifacts out of messy tasks: handovers, diagnosis cards, acceptance specs and evidence-backed reports. Start with three free skills; each includes English and Chinese versions.
 
-## Free, complete samples (MIT)
-- [resumable-handover](./resumable-handover/SKILL.md) — Turn task state into a checkpoint someone can resume directly.
-- [unknown-delivery-reconciliation](./unknown-delivery-reconciliation/SKILL.md) — Reconcile the original submission before treating a timeout as non-delivery.
-- [reactive-form-input](./reactive-form-input/SKILL.md) — Distinguish a visible field value from form state actually accepted by the application.
+## Before / After
+Same task: report v4 business completion from a passing v4 syntax check, an integration test blocked by `AUTH_DENIED`, and a v3 screenshot. The change: a general checklist becomes a version-scoped evidence table that distinguishes not-run from failed.
 
-These are complete, usable skills, not deliberately weakened trials.
+**Before — A, no skill**
+```text
+# v4 business completion check document
+## Check goal
+Confirm whether v4 business work is complete, distinguishing versions of syntax checks, real integration tests and screenshot evidence.
+## Currently known
+- v4 syntax check passed.
+- v4 real integration test was not executed due to AUTH_DENIED; this cannot prove integration passed or business work is complete.
+- The existing screenshot is v3 and cannot directly prove v4 completion.
+…
+1. Confirm the cause of AUTH_DENIED, the required authorization and whether it is resolved; after access returns, confirm whether v4 real integration tests ran and their results.
+2. Supplement or confirm test records, screenshots and other evidence corresponding to v4, and check consistency with the target business scope.
+3. Confirm the specific acceptance criteria and final acceptance conclusion for v4 business completion.
+```
 
-## Installation / 安装
-The supplied SKILL.md bodies are in Simplified Chinese; the product documentation is bilingual. Use one relevant skill at a time. These are text workflows, not plugins, automation scripts or model weights. Tool access and the host application's rules remain unchanged.
+**After — S, with `verification-layer-label`**
+```text
+# Check document
+## Original goal and conclusion
+Original goal: v4 business completion. Conclusion: unverified. Existing evidence confirms only v4 syntax passed; it cannot prove functionality or business completion; the v3 screenshot does not cover v4.
+## Evidence table
+| Claim | Actual check and result | Layer | Version, environment, sample or location |
+|---|---|---|---|
+| Syntax passed | Syntax check recorded as passed | Static structure | v4; environment and location not stated |
+| Real integration | Test did not run due to a permission error | Component integration | v4; environment not stated |
+| Screenshot exists | A screenshot is recorded; it cannot prove usable interaction or business completion | Local sample | v3; page and environment not stated |
+…
+- Not executed: v4 real integration test did not run due to `AUTH_DENIED`.
+```
+Real output from our internal test run, model GPT (`gpt-6.1-terra`, low), translated from Chinese; excerpts from the first formal submissions, with omissions marked `…`.
 
-- **Codex:** copy the entire `<skill-name>` folder into `~/.agents/skills/` (user scope) or `.agents/skills/` in your project. Open/reload the session and ask to use the skill by name. If your installed version uses a different skills location, use its documented directory.
-- **Claude Code:** copy the entire folder into `~/.claude/skills/` (user scope) or `.claude/skills/` in the project. Reload and invoke `/<skill-name>` or ask for it by name.
-- **ChatGPT:** open SKILL.md, copy its full text, and paste it into Custom Instructions. If the field limit is too small, paste the complete text into a new conversation before your task; do not truncate the rules silently. No automatic skill discovery is implied.
-- **DeepSeek:** paste the full SKILL.md into the system prompt if your client supports it. Otherwise paste it as the first message of a new chat; this is conversation context, not a platform-level system prompt.
+## Quick start
+Install all three free skills in one line (Bash, Git Bash or WSL):
+```bash
+git clone https://github.com/tdw8147-crypto/skill-delivery-kit.git && mkdir -p ~/.agents/skills && cp -R skill-delivery-kit/{resumable-handover,unknown-delivery-reconciliation,reactive-form-input} ~/.agents/skills/
+```
+In ChatGPT or DeepSeek, paste a skill's `SKILL.md` into your instructions or the start of a chat.
+Then paste the task and its evidence; use the trigger example below to ask for the artifact.
+For Chinese instructions, paste `SKILL.zh.md` instead.
 
-Then provide the task, available evidence and desired deliverable. The skill produces a structured artifact from the supplied context; it does not itself repair systems, edit workbooks, send messages or submit business forms. Remove its folder or pasted instructions to uninstall.
+## Free skills
+| Skill | What it solves | Trigger example |
+|---|---|---|
+| `resumable-handover` | Resume work without rediscovering the context | Hand this task over with one clear next action. |
+| `unknown-delivery-reconciliation` | Find the original receipt without sending twice | Reconcile this timed-out send without retrying it. |
+| `reactive-form-input` | Tell displayed text from app-accepted input | Check whether this field input actually took effect. |
 
-中文：Codex 放入用户级 `~/.agents/skills/` 或项目 `.agents/skills/`；Claude Code 放入 `~/.claude/skills/` 或项目 `.claude/skills/`，重开会话并按名称调用。ChatGPT 将全文粘贴到自定义指令，超出长度时改为新对话首条完整粘贴；DeepSeek 使用支持系统提示的客户端，否则在新会话首条粘贴。一次选一个相关技能，附任务与已有资料。技能正文为中文，产出结构化文档，不自动执行情境中的业务动作。客户端目录可能随版本变化，请以所装版本文档为准。
+## Paid skills
+| Skill | What it solves | Trigger example |
+|---|---|---|
+| `hypothesis-led-diagnosis` | Turn an unclear failure into a testable diagnosis | Give me a diagnosis card with one discriminating experiment. |
+| `intent-to-acceptance` | Turn a vague request into observable acceptance | Turn this request into a per-item acceptance spec. |
+| `powershell-json-shape-check` | Catch JSON that parses but breaks the consumer | Check zero, one and many items against this JSON contract. |
+| `spreadsheet-formula-preservation` | Check formula preservation separately from values | Audit the original formulas against this edited workbook. |
+| `verification-layer-label` | Say exactly what your checks actually prove | Label this release evidence by verification layer. |
+| `document-format-triage` | Choose the right path for every document page | Triage this document into native, field and OCR paths. |
+| `parallel-task-contract` | Give another executor a brief they can use alone | Write a self-contained task brief with an acceptance example. |
 
-## Paid collection
-Seven paid skills at **US$4.9 each**; the complete **US$14.9 bundle** includes all seven plus the three MIT samples (10 skills total). The free files in the bundle remain free under MIT.
+**Single skill: US$4.90 · Complete bundle (all 10): US$14.90.**
+[Get the complete bundle](https://claudemodeskills.lemonsqueezy.com/checkout/buy/fb481b12-0fa4-4e0d-a856-128f28ad4eb1) · [Browse single skills](https://claudemodeskills.lemonsqueezy.com)
+Each download includes English and Chinese skill files plus a short install guide.
 
-- **hypothesis-led-diagnosis** — Organize diagnosis around falsifiable hypotheses rather than guessed causes.
-- **intent-to-acceptance** — Turn informal requests into acceptance specifications that retain counts and constraints.
-- **powershell-json-shape-check** — Check JSON root types and empty, single and multiple-item shapes, not just parsing.
-- **spreadsheet-formula-preservation** — Compare formula expressions instead of treating unchanged numbers as proof of preservation.
-- **verification-layer-label** — Keep completion wording within the verification layer actually supported by evidence.
-- **document-format-triage** — Identify document structure before choosing field, native-editing or image-based processing.
-- **parallel-task-contract** — Create a self-contained task contract without relying on the main conversation.
+## Results
+Fourth-round internal test: first-delivery all-criteria pass rate (unweighted mean across ten skills).
 
-**[Buy the complete bundle (US$14.9)](https://claudemodeskills.lemonsqueezy.com/checkout/buy/fb481b12-0fa4-4e0d-a856-128f28ad4eb1)** · [All products](https://claudemodeskills.lemonsqueezy.com)
+| Model | No skill (A) | With skill (S) |
+|---|---:|---:|
+| GPT | ≈25% | ≈80% |
+| DeepSeek | ≈76% | 100% |
 
-Prices are listed in USD; final checkout tax handling must be specified by the storefront. Paid content is not licensed by this repository's MIT license.
+Cheap-tier models, model-graded, small sample — details in [EVIDENCE.md](EVIDENCE.md).
 
-## Evidence and limits
-In internal simulated tests (low-cost GPT and DeepSeek models, model-graded, small samples), the share of tasks fully correct on the first delivery rose from about 25% to 80% for GPT and from 76% to 100% for DeepSeek, averaged across the 10 skills. Results vary by task; this is not a guarantee.
+## FAQ
+**What client do I need?** A client that loads `SKILL.md`, such as Codex, or any chat client where you can paste instructions, including ChatGPT and DeepSeek; these are text instructions, not plugins.
 
-## 中文说明
-让 ChatGPT/Codex、DeepSeek 像 Claude 一样直接交付、少反问少免责。三份免费样品完整可用；七份付费技能各 $4.9，十份合集 $14.9。技能把已有资料组织成可用交付物，不代替执行或授权；保留必要澄清和真实限制。购买入口：https://claudemodeskills.lemonsqueezy.com
+**Does this change tool permissions?** No; skills organize the output and next steps using the access your client already has.
 
-内部模拟测试（便宜档 GPT 与 DeepSeek、同模型模拟评审、小样本）中，首次交付全部达标率 GPT 平均约 25%→80%、DeepSeek 约 76%→100%（10 个技能平均）。实际效果因任务而异，不作保证。
+**What about refunds?** Check the refund terms shown at checkout before buying; use the free skills to try the format first.
+
+**Which languages are included?** Every skill comes in English (`SKILL.md`) and Chinese (`SKILL.zh.md`); load one version at a time.
+
+## License
+The public repository and its three free skills are [MIT licensed](LICENSE).
+
+## 中文
+10 个精简技能，把任务整理成可用文档与明确下一步，减少反复追问和空泛声明。
+公开仓库含 3 个免费技能，另有 7 个付费技能；每份均提供英文和中文。
+单品 US$4.90；10 个合集 US$14.90。安装命令见上；聊天客户端可直接粘贴技能正文。
+前后对比来自第四轮真实内部输出；测试方法与完整限制见 EVIDENCE.md。
