@@ -8,25 +8,22 @@ A four-page manual has been exported and its body checked, but nobody has opened
 
 ## Before / After
 
-**Before — GPT, A (no skill), internal simulated test.** Original Chinese excerpt:
+Same task, same model (GPT, internal simulated test). Translated from the original Chinese output; omissions marked `…`.
 
-> ## 待确认
-> - v3 的准确路径、恢复封面的具体操作，以及复核后由谁确认交付。
-> …
+**Without the skill** — the handover ends in an open question list:
 
-**After — GPT, S (short skill), internal simulated test.** Original Chinese excerpt:
+> **To confirm**
+> - The exact path of v3, how to restore the cover, and who signs off delivery after review. …
 
-> 第一动作：定位并打开最新v3文件；完成信号为实际看到v3预览。若暂无法定位，等待提供v3文件位置。
-> …
+**With the skill** — the handover starts with one action and a finish line:
 
-The after response puts the concrete resume action and visible completion signal together.
-It also names the exact missing input instead of making the entire handoff wait.
+> **First action:** locate and open the latest v3 file. **Done when:** you actually see the v3 preview. If it cannot be located yet, wait for the v3 file location. …
 
-Source: `resumable-handover__gpt__hard-1__1__A.json` and `resumable-handover__gpt__hard-1__1__S.json`, `last_draft`.
+The second one tells the next person exactly what to do first and how they will know it worked. It names the one missing input instead of blocking the whole handover on it.
 
 ## Evidence
 
-First-delivery all-criteria pass rate (A → S): **GPT 23.1% → 100.0%; DeepSeek 66.7% → 100.0%** (`EVIDENCE.md`; internal simulated test, small sample). Historical short-skill results, not a test of this expanded edition.
+First-delivery all-criteria pass rate (A → S): **GPT 23.1% → 100.0%; DeepSeek 66.7% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
 
 ## Trigger phrases
 
