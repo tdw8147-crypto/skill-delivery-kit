@@ -8,23 +8,21 @@ An attachment upload times out, but a matching read-only receipt says it arrived
 
 ## Before / After
 
-**Before — GPT, A (no skill), internal simulated test.** Original Chinese excerpt:
+Same task, same model (GPT, internal simulated test). Translated from the original Chinese output; omissions marked `…`.
 
-> 待决：确认q7与att-901是否为同一对象、09:02查询是否覆盖q7，以及q7是否已有delivered证据。若q7属于验收范围且尚无送达证据，整体验收暂不能宣称完成；建议仅针对原q7进行只读状态核实，或在有界期限内等待其delivered，再依据证据判定。等待期限及到期后的处置方向待确认，不擅自重发。
-> …
+**Without the skill** — careful, but open-ended:
 
-**After — GPT, S (short skill), internal simulated test.** Original Chinese excerpt:
+> **Pending:** confirm whether q7 and att-901 are the same object, whether the 09:02 query covered q7, and whether q7 already has delivered evidence … Suggest only a read-only status check of the original q7, or waiting for a bounded time … The waiting period and what to do when it expires are still to be confirmed. Do not resend on our own.
 
-> 下一步：建议仅对原q7进行最多一次只读正式状态查询，核对目标、提交时间及原附件hash以确认其是否属于att-901。若匹配原身份的最新可信回执为delivered，即达到送达验收并结案，无需等待已读；若查询不可用、身份仍无法归属或未达到送达，则保留待决，不再自动查询。不得重投、换标识重投或再次点击测试。
+**With the skill** — a capped, decidable next step:
 
-Both avoid resending; the after response sets a concrete cap and names what to match.
-It defines when to close and when to preserve the unresolved state without further polling.
+> **Next step:** run at most **one** read-only status query on the original q7, matching target, submit time and the original attachment hash to att-901. If the latest trusted receipt for that identity is *delivered*, acceptance is met — close it; no need to wait for "read". If the query is unavailable or the identity still cannot be matched, keep it pending and stop polling. Never resend, resend under a new ID, or click to test.
 
-Source: `unknown-delivery-reconciliation__gpt__hard-1__1__A.json` and `unknown-delivery-reconciliation__gpt__hard-1__1__S.json`, `last_draft`.
+Both avoid a duplicate send. The second sets a hard cap, says exactly what to match, and defines when the case is closed.
 
 ## Evidence
 
-First-delivery all-criteria pass rate (A → S): **GPT 15.4% → 33.3%; DeepSeek 92.3% → 100.0%** (`EVIDENCE.md`; internal simulated test, small sample). Historical short-skill results, not a test of this expanded edition.
+First-delivery all-criteria pass rate (A → S): **GPT 15.4% → 33.3%; DeepSeek 92.3% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
 
 ## Trigger phrases
 
