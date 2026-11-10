@@ -23,7 +23,7 @@ The second one tells the next person exactly what to do first and how they will 
 
 ## Evidence
 
-First-delivery all-criteria pass rate (A → S): **GPT 23.1% → 100.0%; DeepSeek 66.7% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
+First-delivery all-criteria pass rate, without → with the skill: **GPT 23.1% → 100.0%; DeepSeek 66.7% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
 
 ## Trigger phrases
 
