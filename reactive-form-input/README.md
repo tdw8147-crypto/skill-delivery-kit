@@ -25,7 +25,7 @@ The second one separates the displayed value from the app's own state and lists 
 
 ## Evidence
 
-First-delivery all-criteria pass rate (A → S): **GPT 33.3% → 100.0%; DeepSeek 80.0% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
+First-delivery all-criteria pass rate, without → with the skill: **GPT 33.3% → 100.0%; DeepSeek 80.0% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
 
 ## Trigger phrases
 
