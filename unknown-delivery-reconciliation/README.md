@@ -22,7 +22,7 @@ Both avoid a duplicate send. The second sets a hard cap, says exactly what to ma
 
 ## Evidence
 
-First-delivery all-criteria pass rate (A → S): **GPT 15.4% → 33.3%; DeepSeek 92.3% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
+First-delivery all-criteria pass rate, without → with the skill: **GPT 15.4% → 33.3%; DeepSeek 92.3% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
 
 ## Trigger phrases
 
