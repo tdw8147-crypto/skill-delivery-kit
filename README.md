@@ -52,15 +52,15 @@ The model is not stupid. It just has no habit of **separating what it checked fr
 | A new session has to rediscover everything you already did | [`resumable-handover`](resumable-handover) | **Free** |
 | A send timed out and you do not know whether it went through | [`unknown-delivery-reconciliation`](unknown-delivery-reconciliation) | **Free** |
 | The form *shows* your value but the app never accepted it | [`reactive-form-input`](reactive-form-input) | **Free** |
-| “Tests pass” — but nobody says *which* tests, on *which* version | `verification-layer-label` | $4.90 |
-| A vague request turns into the wrong deliverable | `intent-to-acceptance` | $4.90 |
-| Debugging goes in circles, one random fix after another | `hypothesis-led-diagnosis` | $4.90 |
-| JSON parses fine but breaks the consumer at 0, 1 or many items | `powershell-json-shape-check` | $4.90 |
-| The numbers look right but the formulas were flattened to values | `spreadsheet-formula-preservation` | $4.90 |
-| A PDF or scan goes down the wrong extraction path | `document-format-triage` | $4.90 |
-| A sub-agent gets a brief it cannot act on alone | `parallel-task-contract` | $4.90 |
+| “Tests pass” — but nobody says *which* tests, on *which* version | [`verification-layer-label`](https://www.agensi.io/skills/verification-layer-label) | $4.90 |
+| A vague request turns into the wrong deliverable | [`intent-to-acceptance`](https://www.agensi.io/skills/intent-to-acceptance) | $4.90 |
+| Debugging goes in circles, one random fix after another | [`hypothesis-led-diagnosis`](https://www.agensi.io/skills/hypothesis-led-diagnosis) | $4.90 |
+| JSON parses fine but breaks the consumer at 0, 1 or many items | [`powershell-json-shape-check`](https://www.agensi.io/skills/powershell-json-shape-check) | $4.90 |
+| The numbers look right but the formulas were flattened to values | [`spreadsheet-formula-preservation`](https://www.agensi.io/skills/spreadsheet-formula-preservation) | $4.90 |
+| A PDF or scan goes down the wrong extraction path | [`document-format-triage`](https://www.agensi.io/skills/document-format-triage) | $4.90 |
+| A sub-agent gets a brief it cannot act on alone | [`parallel-task-contract`](https://www.agensi.io/skills/parallel-task-contract) | $4.90 |
 
-**All 10 for US$14.90** (save 70%) → **[Get the complete bundle](https://claudemodeskills.lemonsqueezy.com/checkout/buy/fb481b12-0fa4-4e0d-a856-128f28ad4eb1)**
+The 3 free skills are complete on their own. If you want the other 7: **[all 7 paid skills for US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)** (US$4.90 each otherwise), sold on [Agensi](https://www.agensi.io/creators/td-w).
 
 ## ⚡ Install in 30 seconds
 
@@ -196,12 +196,12 @@ Metric: first formal delivery meets *all* acceptance criteria. Measured on the e
 | | Free (this repo) | Single skill | Complete bundle |
 |---|:-:|:-:|:-:|
 | Price | $0 | **US$4.90** | **US$14.90** |
-| Skills | 3 | 1 of your choice | All 10 |
+| Skills | 3 | 1 of your choice | All 7 paid (+ the 3 free = 10) |
 | English + Chinese | ✅ | ✅ | ✅ |
 | Updates to that skill | ✅ | ✅ | ✅ |
-| | [Install above](#-install-in-30-seconds) | [Browse skills](https://claudemodeskills.lemonsqueezy.com) | **[Get the bundle →](https://claudemodeskills.lemonsqueezy.com/checkout/buy/fb481b12-0fa4-4e0d-a856-128f28ad4eb1)** |
+| | [Install above](#-install-in-30-seconds) | [Browse on Agensi](https://www.agensi.io/creators/td-w) | **[Get the bundle →](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)** |
 
-Also on [Agensi](https://www.agensi.io/users/td-w), the marketplace for agent skills.
+Paid skills are sold through [Agensi](https://www.agensi.io/creators/td-w), a marketplace for agent skills (every listing passes its security scan).
 
 ## ❓ FAQ
 
@@ -243,7 +243,7 @@ The refund terms are shown at checkout. Try the three free skills first. They us
 - 内部模拟 A/B 测试（10 个技能平均，小样本，模型评分，测的是上一版精简技能）：GPT 首次交付全部达标率约 **25% → 80%**，DeepSeek 约 **76% → 100%**。详见 EVIDENCE.md。
 - 一个技能只解决一种失败模式：交接丢上下文、超时后重复发送、表单看似填好其实没生效、“测试通过”却说不清测了什么……
 - 每个技能都有英文和中文两版，包含使用时机、规则、步骤、可直接填写的模板、正反例和交付前自检。
-- 本仓库免费提供 3 个技能（MIT 许可）；单品 US$4.90，10 个合集 US$14.90。
+- 本仓库免费提供 3 个技能（MIT 许可）；另外 7 个付费技能单品 US$4.90，[7 个合集 US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)，在 Agensi 购买。
 - 安装：复制技能文件夹到 `~/.claude/skills/`（Claude Code）或 `~/.agents/skills/`（Codex）；聊天应用直接粘贴 `SKILL.zh.md` 的内容。
 
 ## License
