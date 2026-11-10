@@ -60,7 +60,7 @@ The model is not stupid. It just has no habit of **separating what it checked fr
 | A PDF or scan goes down the wrong extraction path | `document-format-triage` | $4.90 |
 | A sub-agent gets a brief it cannot act on alone | `parallel-task-contract` | $4.90 |
 
-**All 10 for US$14.90** (save 70%) → **[Get the complete bundle](https://claudemodeskills.lemonsqueezy.com/checkout/buy/fb481b12-0fa4-4e0d-a856-128f28ad4eb1)**
+**All 10 for US$14.90** (save 70%) → **Checkout opening soon** — ⭐ Star or Watch this repo to get notified.
 
 ## ⚡ Install in 30 seconds
 
@@ -199,7 +199,7 @@ Metric: first formal delivery meets *all* acceptance criteria. Measured on the e
 | Skills | 3 | 1 of your choice | All 10 |
 | English + Chinese | ✅ | ✅ | ✅ |
 | Updates to that skill | ✅ | ✅ | ✅ |
-| | [Install above](#-install-in-30-seconds) | [Browse skills](https://claudemodeskills.lemonsqueezy.com) | **[Get the bundle →](https://claudemodeskills.lemonsqueezy.com/checkout/buy/fb481b12-0fa4-4e0d-a856-128f28ad4eb1)** |
+| | [Install above](#-install-in-30-seconds) | Opening soon | **Opening soon** |
 
 Also on [Agensi](https://www.agensi.io/users/td-w), the marketplace for agent skills.
 
