@@ -45,6 +45,10 @@ The model is not stupid. It just has no habit of **separating what it checked fr
   <img src="media/before-after.png" alt="Same task, same model: without the skill you get a generic to-do list; with verification-layer-label you get a verdict and an evidence table" width="92%">
 </p>
 
+<p align="center">
+  <img src="media/demo.gif" alt="Animated demo: the same model gets the same handover task twice. Without the skill it turns a settled fact into a question and scores 3 of 6; with resumable-handover it gives one first action and a clear done-when signal and scores 6 of 6." width="92%">
+</p>
+
 ## 🎯 Pick your pain
 
 | When this happens… | Install this | |
@@ -152,6 +156,8 @@ A verdict, an evidence table and the one action that closes the gap.
 
 <sub>Real first submissions from our internal test run (gpt-6.1-terra, low), translated from Chinese and condensed (`…`). Originals are in <a href="EVIDENCE.md">EVIDENCE.md</a>.</sub>
 
+**More real before/after pairs, one per free skill, with full inputs, both outputs and the grader's checklist:** [resumable-handover](resumable-handover/EXAMPLES.md) · [unknown-delivery-reconciliation](unknown-delivery-reconciliation/EXAMPLES.md) · [reactive-form-input](reactive-form-input/EXAMPLES.md)
+
 ## 📦 What's in a skill
 
 Every skill is one folder you can read in five minutes:
@@ -161,6 +167,7 @@ Every skill is one folder you can read in five minutes:
 | `SKILL.md` | When to use it (and when not to), core rules with the reason for each, a step-by-step workflow, a fill-in output template, worked good-vs-bad examples, a red-flags table and a pre-delivery self-check |
 | `SKILL.zh.md` | The same skill in natural Chinese |
 | `README.md` | The problem, a real before/after, measured numbers, trigger phrases and install steps |
+| `EXAMPLES.md` | Free skills only: one complete real test pair with inputs, both outputs and the grading |
 
 No scripts, no plugins, no new permissions. They are plain-text instructions, so you can read every line before you trust it.
 
@@ -244,6 +251,7 @@ The refund terms are shown at checkout. Try the three free skills first. They us
 - 一个技能只解决一种失败模式：交接丢上下文、超时后重复发送、表单看似填好其实没生效、“测试通过”却说不清测了什么……
 - 每个技能都有英文和中文两版，包含使用时机、规则、步骤、可直接填写的模板、正反例和交付前自检。
 - 本仓库免费提供 3 个技能（MIT 许可）；另外 7 个付费技能单品 US$4.90，[7 个合集 US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)，在 Agensi 购买。
+- 每个免费技能文件夹里都有 `EXAMPLES.md`：一组完整的真实测试对比（输入资料、两份原始输出、评分项）。
 - 安装：复制技能文件夹到 `~/.claude/skills/`（Claude Code）或 `~/.agents/skills/`（Codex）；聊天应用直接粘贴 `SKILL.zh.md` 的内容。
 
 ## License

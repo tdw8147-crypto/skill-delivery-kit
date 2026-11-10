@@ -23,6 +23,8 @@ The second one separates the displayed value from the app's own state and lists 
 
 <sub>This excerpt comes from an earlier full-length draft of the skill; the saved archive has no compact-version sample for this task.</sub>
 
+**Full before/after with the task inputs, both complete outputs and the grader's checklist: [EXAMPLES.md](EXAMPLES.md).**
+
 ## Evidence
 
 First-delivery all-criteria pass rate, without → with the skill: **GPT 33.3% → 100.0%; DeepSeek 80.0% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
@@ -46,6 +48,7 @@ First-delivery all-criteria pass rate, without → with the skill: **GPT 33.3% �
 - `SKILL.md` — English workflow, template, examples and checklist.
 - `SKILL.zh.md` — Complete Chinese version.
 - `README.md` — This page: the problem, a real before/after, numbers and install steps.
+- `EXAMPLES.md` — One complete real test pair: inputs, both outputs (English + original Chinese) and how each was graded.
 
 ## 中文简介
 

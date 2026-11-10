@@ -21,6 +21,8 @@ Same task, same model (GPT, internal simulated test). Translated from the origin
 
 The second one tells the next person exactly what to do first and how they will know it worked. It names the one missing input instead of blocking the whole handover on it.
 
+**Full before/after with the task inputs, both complete outputs and the grader's checklist: [EXAMPLES.md](EXAMPLES.md).**
+
 ## Evidence
 
 First-delivery all-criteria pass rate, without → with the skill: **GPT 23.1% → 100.0%; DeepSeek 66.7% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
@@ -44,6 +46,7 @@ First-delivery all-criteria pass rate, without → with the skill: **GPT 23.1% �
 - `SKILL.md` — English workflow, template, examples and checklist.
 - `SKILL.zh.md` — Complete Chinese version.
 - `README.md` — This page: the problem, a real before/after, numbers and install steps.
+- `EXAMPLES.md` — One complete real test pair: inputs, both outputs (English + original Chinese) and how each was graded.
 
 ## 中文简介
 
