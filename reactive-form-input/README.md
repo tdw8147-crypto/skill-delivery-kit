@@ -8,25 +8,24 @@ A profile page has a visible contact email field and a hidden email field. A DOM
 
 ## Before / After
 
-**Before — GPT, A (no skill), internal simulated test.** Original Chinese excerpt:
+Same task, same model (GPT, internal simulated test). Translated from the original Chinese output; omissions marked `…`.
 
-> ## 当前结论
-> 已报告状态同步与提交受阻现象；原因和验证结果待确认，不能宣称检查完成或通过。
+**Without the skill** — a status line with nothing to act on:
 
-**After — GPT with an earlier full-length version of this skill, internal simulated test.** Original Chinese excerpt:
+> **Current conclusion:** state sync and blocked submit have been reported; cause and verification results are pending, so the check cannot be called complete or passed.
 
-> - 资料记载：DOM 赋值后显示值正确，但 React state 为空，提交按钮禁用。资料未说明具体观察时点、校验提示或异步校验是否结束。
-> - 显示值与应用状态不一致，不能仅凭 DOM 值判定输入已生效；当前只能记录为未确认生效，亦不能据此断言最终失败。上述状态均为资料记载，未由本次实际验证。
-> …
+**With the skill** — what was shown vs what the app accepted:
 
-The after response separates what was displayed from what the application accepted.
-It also names the missing validation evidence without implying a live test ran.
+> - **On record:** after the DOM write the displayed value is correct, but React state is empty and the submit button is disabled. The record does not say when this was observed, whether a validation message appeared, or whether async validation finished.
+> - Displayed value and app state disagree, so the DOM value alone does not prove the input took effect. Status: **not confirmed as accepted** — and also not proven to have failed. …
 
-Source: `reactive-form-input__gpt__hard-1__1__A.json` and `reactive-form-input__gpt__hard-1__1__C.json`, `last_draft`. The saved archive has no compact-version sample for this task, so the excerpt comes from the earlier full-length variant.
+The second one separates the displayed value from the app's own state and lists exactly which evidence is missing, without pretending a live test ran.
+
+<sub>This excerpt comes from an earlier full-length draft of the skill; the saved archive has no compact-version sample for this task.</sub>
 
 ## Evidence
 
-First-delivery all-criteria pass rate (A → S): **GPT 33.3% → 100.0%; DeepSeek 80.0% → 100.0%** (`EVIDENCE.md`; internal simulated test, small sample). These are historical compact-version results, not results for the excerpt above or for this expanded edition.
+First-delivery all-criteria pass rate (A → S): **GPT 33.3% → 100.0%; DeepSeek 80.0% → 100.0%** ([EVIDENCE.md](../EVIDENCE.md); internal simulated test, small sample). Measured on the earlier compact edition of this skill; this expanded edition has not been re-measured yet.
 
 ## Trigger phrases
 
