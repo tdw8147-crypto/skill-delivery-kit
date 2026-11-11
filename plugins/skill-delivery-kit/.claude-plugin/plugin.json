@@ -10,5 +10,16 @@
   "homepage": "https://github.com/tdw8147-crypto/skill-delivery-kit",
   "repository": "https://github.com/tdw8147-crypto/skill-delivery-kit",
   "license": "MIT",
-  "keywords": ["handover", "verification", "timeout", "retry", "web-forms", "browser-automation", "checklist"]
+  "keywords": [
+    "handover",
+    "verification",
+    "timeout",
+    "retry",
+    "web-forms",
+    "browser-automation",
+    "checklist"
+  ],
+  "supportUrl": "https://github.com/tdw8147-crypto/skill-delivery-kit/issues",
+  "documentationUrl": "https://github.com/tdw8147-crypto/skill-delivery-kit/blob/main/plugins/skill-delivery-kit/README.md",
+  "privacyPolicyUrl": "https://github.com/tdw8147-crypto/skill-delivery-kit/blob/main/plugins/skill-delivery-kit/PRIVACY.md"
 }
