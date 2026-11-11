@@ -4,7 +4,7 @@
 
 <p align="center">
   <b>Stop your coding agent from saying “done” when nothing was verified.</b><br>
-  10 drop-in skills that make Codex, Claude Code, Cursor, ChatGPT and DeepSeek hand over real, checkable work on the first try.
+  10 drop-in skills (3 free in this repo, 7 paid on Agensi) that make Codex, Claude Code, Cursor, ChatGPT and DeepSeek hand over real, checkable work on the first try.
 </p>
 
 <p align="center">
@@ -56,17 +56,29 @@ The model is not stupid. It just has no habit of **separating what it checked fr
 | A new session has to rediscover everything you already did | [`resumable-handover`](resumable-handover) | **Free** |
 | A send timed out and you do not know whether it went through | [`unknown-delivery-reconciliation`](unknown-delivery-reconciliation) | **Free** |
 | The form *shows* your value but the app never accepted it | [`reactive-form-input`](reactive-form-input) | **Free** |
-| “Tests pass” — but nobody says *which* tests, on *which* version | [`verification-layer-label`](https://www.agensi.io/skills/verification-layer-label) | $4.90 |
-| A vague request turns into the wrong deliverable | [`intent-to-acceptance`](https://www.agensi.io/skills/intent-to-acceptance) | $4.90 |
-| Debugging goes in circles, one random fix after another | [`hypothesis-led-diagnosis`](https://www.agensi.io/skills/hypothesis-led-diagnosis) | $4.90 |
-| JSON parses fine but breaks the consumer at 0, 1 or many items | [`powershell-json-shape-check`](https://www.agensi.io/skills/powershell-json-shape-check) | $4.90 |
-| The numbers look right but the formulas were flattened to values | [`spreadsheet-formula-preservation`](https://www.agensi.io/skills/spreadsheet-formula-preservation) | $4.90 |
-| A PDF or scan goes down the wrong extraction path | [`document-format-triage`](https://www.agensi.io/skills/document-format-triage) | $4.90 |
-| A sub-agent gets a brief it cannot act on alone | [`parallel-task-contract`](https://www.agensi.io/skills/parallel-task-contract) | $4.90 |
+| “Tests pass” — but nobody says *which* tests, on *which* version | [`verification-layer-label`](https://www.agensi.io/skills/done-means-verified-report-what-was-actually-checked) | $5 |
+| A vague request turns into the wrong deliverable | [`intent-to-acceptance`](https://www.agensi.io/skills/vague-request-to-clear-acceptance-criteria) | $5 |
+| Debugging goes in circles, one random fix after another | [`hypothesis-led-diagnosis`](https://www.agensi.io/skills/debug-by-hypothesis-find-the-cause-before-you-fix) | $5 |
+| JSON parses fine but breaks the consumer at 0, 1 or many items | [`powershell-json-shape-check`](https://www.agensi.io/skills/powershell-json-check-catch-single-item-and-null-bugs) | $5 |
+| The numbers look right but the formulas were flattened to values | [`spreadsheet-formula-preservation`](https://www.agensi.io/skills/spreadsheet-edit-check-did-any-formulas-get-lost) | $5 |
+| A PDF or scan goes down the wrong extraction path | [`document-format-triage`](https://www.agensi.io/skills/pdf-triage-text-form-fields-or-scan-pick-the-route) | $5 |
+| A sub-agent gets a brief it cannot act on alone | [`parallel-task-contract`](https://www.agensi.io/skills/sub-agent-task-briefs-split-work-without-conflicts) | $5 |
 
-The 3 free skills are complete on their own. If you want the other 7: **[all 7 paid skills for US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)** (US$4.90 each otherwise), sold on [Agensi](https://www.agensi.io/creators/td-w).
+The 3 free skills are complete on their own. If you want the other 7: **[all 7 paid skills for US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)** (US$5 each otherwise), sold on [Agensi](https://www.agensi.io/creators/td-w).
 
 ## ⚡ Install in 30 seconds
+
+```bash
+npx skills add tdw8147-crypto/skill-delivery-kit
+```
+
+The installer finds the 3 free skills in this repo and lets you choose what to install. Needs Node.js. One skill, no prompts:
+
+```bash
+npx skills add tdw8147-crypto/skill-delivery-kit --skill resumable-handover -a claude-code -y --copy
+```
+
+**Manual install (no Node.js):**
 
 ```bash
 git clone https://github.com/tdw8147-crypto/skill-delivery-kit.git
@@ -202,7 +214,7 @@ Metric: first formal delivery meets *all* acceptance criteria. Measured on the e
 
 | | Free (this repo) | Single skill | Complete bundle |
 |---|:-:|:-:|:-:|
-| Price | $0 | **US$4.90** | **US$14.90** |
+| Price | $0 | **US$5** | **US$14.90** |
 | Skills | 3 | 1 of your choice | All 7 paid (+ the 3 free = 10) |
 | English + Chinese | ✅ | ✅ | ✅ |
 | Updates to that skill | ✅ | ✅ | ✅ |
@@ -245,14 +257,14 @@ The refund terms are shown at checkout. Try the three free skills first. They us
 ## 🀄 中文
 
 **让编码 AI 别再“说做完了”却什么都没验证。**
-10 个即插即用的技能，让 Codex、Claude Code、Cursor、ChatGPT 和 DeepSeek 第一次就交出可核对、能直接用的结果。
+10 个即插即用的技能（本仓库 3 个免费，另 7 个在 Agensi），让 Codex、Claude Code、Cursor、ChatGPT 和 DeepSeek 第一次就交出可核对、能直接用的结果。
 
 - 内部模拟 A/B 测试（10 个技能平均，小样本，模型评分，测的是上一版精简技能）：GPT 首次交付全部达标率约 **25% → 80%**，DeepSeek 约 **76% → 100%**。详见 EVIDENCE.md。
 - 一个技能只解决一种失败模式：交接丢上下文、超时后重复发送、表单看似填好其实没生效、“测试通过”却说不清测了什么……
 - 每个技能都有英文和中文两版，包含使用时机、规则、步骤、可直接填写的模板、正反例和交付前自检。
-- 本仓库免费提供 3 个技能（MIT 许可）；另外 7 个付费技能单品 US$4.90，[7 个合集 US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)，在 Agensi 购买。
+- 本仓库免费提供 3 个技能（MIT 许可）；另外 7 个付费技能单品 US$5，[7 个合集 US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)，在 Agensi 购买。
 - 每个免费技能文件夹里都有 `EXAMPLES.md`：一组完整的真实测试对比（输入资料、两份原始输出、评分项）。
-- 安装：复制技能文件夹到 `~/.claude/skills/`（Claude Code）或 `~/.agents/skills/`（Codex）；聊天应用直接粘贴 `SKILL.zh.md` 的内容。
+- 安装：`npx skills add tdw8147-crypto/skill-delivery-kit`（需要 Node.js）；或手动复制技能文件夹到 `~/.claude/skills/`（Claude Code）或 `~/.agents/skills/`（Codex）；聊天应用直接粘贴 `SKILL.zh.md` 的内容。
 
 ## License
 
