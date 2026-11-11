@@ -1,0 +1,15 @@
+{
+  "name": "skill-delivery-kit",
+  "description": "Skills that make an agent's hand-offs checkable",
+  "owner": {
+    "name": "Skill Delivery Kit",
+    "url": "https://github.com/tdw8147-crypto"
+  },
+  "plugins": [
+    {
+      "name": "skill-delivery-kit",
+      "source": "./plugins/skill-delivery-kit",
+      "description": "Three skills: resumable handovers, reconciling timed-out sends without resending, and verifying web form input before submit."
+    }
+  ]
+}

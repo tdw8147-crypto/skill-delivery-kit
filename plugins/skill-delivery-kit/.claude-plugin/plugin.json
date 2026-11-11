@@ -1,0 +1,14 @@
+{
+  "name": "skill-delivery-kit",
+  "displayName": "Skill Delivery Kit",
+  "version": "1.0.0",
+  "description": "Three skills that make an agent's hand-offs checkable: a handover the next session can resume from, a timed-out send reconciled without sending twice, and a web form field verified before submit.",
+  "author": {
+    "name": "Skill Delivery Kit",
+    "url": "https://github.com/tdw8147-crypto"
+  },
+  "homepage": "https://github.com/tdw8147-crypto/skill-delivery-kit",
+  "repository": "https://github.com/tdw8147-crypto/skill-delivery-kit",
+  "license": "MIT",
+  "keywords": ["handover", "verification", "timeout", "retry", "web-forms", "browser-automation", "checklist"]
+}

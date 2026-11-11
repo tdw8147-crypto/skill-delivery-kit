@@ -7,3 +7,4 @@ The MIT license in LICENSE applies only to the three free skill directories list
 - resumable-handover-zh
 - unknown-delivery-reconciliation-zh
 - reactive-form-input-zh
+- plugins/skill-delivery-kit (the same three skills packaged as a Claude Code plugin)

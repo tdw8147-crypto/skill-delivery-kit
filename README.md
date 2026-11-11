@@ -92,6 +92,13 @@ mkdir -p ~/.claude/skills
 cp -R skill-delivery-kit/resumable-handover ~/.claude/skills/
 ```
 Claude Code loads the skill automatically when the task matches its description. Restart the session after copying.
+
+Or install all three as one Claude Code plugin:
+
+```
+/plugin marketplace add tdw8147-crypto/skill-delivery-kit
+/plugin install skill-delivery-kit@skill-delivery-kit
+```
 </details>
 
 <details>
