@@ -4,3 +4,6 @@ The MIT license in LICENSE applies only to the three free skill directories list
 - resumable-handover
 - unknown-delivery-reconciliation
 - reactive-form-input
+- resumable-handover-zh
+- unknown-delivery-reconciliation-zh
+- reactive-form-input-zh

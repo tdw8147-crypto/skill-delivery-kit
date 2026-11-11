@@ -72,7 +72,7 @@ The 3 free skills are complete on their own. If you want the other 7: **[all 7 p
 npx skills add tdw8147-crypto/skill-delivery-kit
 ```
 
-The installer finds the 3 free skills in this repo and lets you choose what to install. Needs Node.js. One skill, no prompts:
+The installer lists the 3 free skills in this repo and lets you choose what to install. Each one also comes as a standalone Chinese edition (the names ending in `-zh`); pick one language per skill. Needs Node.js. One skill, no prompts:
 
 ```bash
 npx skills add tdw8147-crypto/skill-delivery-kit --skill resumable-handover -a claude-code -y --copy
@@ -265,6 +265,7 @@ The refund terms are shown at checkout. Try the three free skills first. They us
 - 本仓库免费提供 3 个技能（MIT 许可）；另外 7 个付费技能单品 US$5，[7 个合集 US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)，在 Agensi 购买。
 - 每个免费技能文件夹里都有 `EXAMPLES.md`：一组完整的真实测试对比（输入资料、两份原始输出、评分项）。
 - 安装：`npx skills add tdw8147-crypto/skill-delivery-kit`（需要 Node.js）；或手动复制技能文件夹到 `~/.claude/skills/`（Claude Code）或 `~/.agents/skills/`（Codex）；聊天应用直接粘贴 `SKILL.zh.md` 的内容。
+- 中文版可以单独安装，技能名以 `-zh` 结尾，例如 `npx skills add tdw8147-crypto/skill-delivery-kit --skill resumable-handover-zh`。中文版和英文版装一个就够。
 
 ## License
 
