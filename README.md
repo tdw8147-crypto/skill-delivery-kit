@@ -53,7 +53,7 @@ The model is not stupid. It just has no habit of **separating what it checked fr
 
 | When this happens… | Install this | |
 |---|---|:-:|
-| A new session has to rediscover everything you already did | [`resumable-handover`](resumable-handover) | **Free** |
+| Chat too long or context compacted — the new window forgets names, rules and what you cancelled | [`resumable-handover`](resumable-handover) | **Free** |
 | A send timed out and you do not know whether it went through | [`unknown-delivery-reconciliation`](unknown-delivery-reconciliation) | **Free** |
 | The form *shows* your value but the app never accepted it | [`reactive-form-input`](reactive-form-input) | **Free** |
 | “Tests pass” — but nobody says *which* tests, on *which* version | [`verification-layer-label`](https://www.agensi.io/skills/done-means-verified-report-what-was-actually-checked) | $5 |
@@ -215,6 +215,8 @@ Round-4 internal A/B test: same model, same task, with vs without the skill. Fiv
 | verification-layer-label | 69% → **100%** | 91% → **100%** |
 | **Average** | **25% → 80%** | **76% → 100%** |
 
+**Update, Nov 2026:** `resumable-handover` was rewritten (v4) and re-tested on 6 new chat + agent scenarios against no skill and a popular competitor: with the user only saying “summarize this”, 0.98 vs 0.95 (no skill). Method, transcripts and scripts: [resumable-handover](resumable-handover/README.md).
+
 Metric: first formal delivery meets *all* acceptance criteria. Measured on the earlier compact edition of each skill (v0.2); this v1.0 adds templates, examples and checklists on top of the same rules and has not been re-measured yet. Low-cost models (gpt-6.1-terra low, deepseek-v4.1-flash), graded by a model, small sample. This is not a guarantee; read [EVIDENCE.md](EVIDENCE.md) for the denominators, censored samples and what we did **not** test.
 
 ## 🛒 Get all 10
@@ -266,6 +268,7 @@ The refund terms are shown at checkout. Try the three free skills first. They us
 **让编码 AI 别再“说做完了”却什么都没验证。**
 10 个即插即用的技能（本仓库 3 个免费，另 7 个在 Agensi），让 Codex、Claude Code、Cursor、ChatGPT 和 DeepSeek 第一次就交出可核对、能直接用的结果。
 
+- **聊天太长要开新窗口？** `resumable-handover-zh`：贴给 DeepSeek / ChatGPT / 豆包 / Kimi，说一句“总结一下我要开新对话”，它写的交接纸条让新窗口不忘名字、规矩和确认号，不复活你否掉的方案。2026-11 新版实测：只说“总结一下”时 0.98 分，不装 0.95（[测试方法和脚本](resumable-handover/README.md)）。
 - 内部模拟 A/B 测试（10 个技能平均，小样本，模型评分，测的是上一版精简技能）：GPT 首次交付全部达标率约 **25% → 80%**，DeepSeek 约 **76% → 100%**。详见 EVIDENCE.md。
 - 一个技能只解决一种失败模式：交接丢上下文、超时后重复发送、表单看似填好其实没生效、“测试通过”却说不清测了什么……
 - 每个技能都有英文和中文两版，包含使用时机、规则、步骤、可直接填写的模板、正反例和交付前自检。
