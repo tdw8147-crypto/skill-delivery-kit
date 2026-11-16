@@ -1,3 +1,5 @@
+<p align="center"><img src="../media/ruoxi-handover-banner.png" alt="Ruoxi's handover note: a new window that remembers" width="100%"></p>
+
 # Resumable Handover
 
 Chat too long? Context about to compact? Paste this skill in, say "summarize so I can start a new chat", and the new window picks up exactly where you left off — same names, same rules, nothing you cancelled coming back.
