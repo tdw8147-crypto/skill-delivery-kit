@@ -43,3 +43,10 @@ To rerun the test: `python eval/nofab_bench.py run` then `python eval/nofab_benc
 - Chinese-only folder: [no-made-up-facts-zh](../no-made-up-facts-zh/)
 - Same series: [resumable-handover](../resumable-handover/) - keep context when you switch chat windows
 - License: MIT
+
+## Liked this? More from the same kit
+
+This skill is free and complete on its own. The same kit has 7 more skills for coding agents (Claude Code, Codex, Cursor): say *which* tests actually passed, turn a vague request into acceptance criteria, debug by hypothesis, keep spreadsheet formulas, triage PDFs, brief sub-agents, check JSON shapes.
+
+- **[All 7 for US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)** (US$5 each) on [Agensi](https://www.agensi.io/creators/td-w)
+- Full list and the other free skills: [repo home](../README.md)

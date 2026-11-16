@@ -61,3 +61,10 @@ Honest limits: small sample; modern models already write decent handovers when a
 - `SKILL.md` — English skill: the 8-part note, writing rules, self-check, two examples.
 - `SKILL.zh.md` — Chinese skill (the one tested above).
 - `EXAMPLES.md` — a complete before/after from the **previous** edition's test.
+
+## Liked this? More from the same kit
+
+This skill is free and complete on its own. The same kit has 7 more skills for coding agents (Claude Code, Codex, Cursor): say *which* tests actually passed, turn a vague request into acceptance criteria, debug by hypothesis, keep spreadsheet formulas, triage PDFs, brief sub-agents, check JSON shapes.
+
+- **[All 7 for US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)** (US$5 each) on [Agensi](https://www.agensi.io/creators/td-w)
+- Full list and the other free skills: [repo home](../README.md)

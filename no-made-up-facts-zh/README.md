@@ -39,3 +39,10 @@ npx skills add tdw8147-crypto/skill-delivery-kit --skill no-made-up-facts-zh
 - 英文版和测试脚本：[no-made-up-facts](../no-made-up-facts/)
 - 同系列：[换窗口交接纸条](../resumable-handover-zh/)（聊太长要开新对话时用）
 - 许可：MIT
+
+## 觉得好用？同系列还有
+
+这个技能免费、单独就能用。同一套里还有 7 个给编程 AI（Claude Code、Codex、Cursor）用的技能：说清到底跑过哪些测试、把模糊需求变成验收标准、按假设查 bug、改表格不丢公式、PDF 先分类再提取、给子助手写任务单、查 JSON 形状。
+
+- **[7 个合集 US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)**（单个 US$5），在 [Agensi](https://www.agensi.io/creators/td-w) 购买
+- 完整清单和其它免费技能：[仓库首页](../README.md)
