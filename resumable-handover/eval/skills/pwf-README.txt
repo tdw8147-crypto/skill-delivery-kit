@@ -1,0 +1,1 @@
+Competitor files (planning-with-files, MIT) are not copied here; download skills/i18n/planning-with-files-zh/SKILL.md and skills/planning-with-files/templates/*.md from github.com/OthmanAdi/planning-with-files into skills/pwf/ with the same layout.
