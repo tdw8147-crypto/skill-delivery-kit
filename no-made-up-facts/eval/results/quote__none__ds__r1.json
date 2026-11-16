@@ -1,0 +1,11 @@
+{
+  "case": "quote",
+  "cond": "none",
+  "model": "ds",
+  "rep": 1,
+  "answer": "这条信息不成立：**马斯克没有在2025年哈佛大学毕业典礼上发表演讲**，公开记录中也没有他在该场合说过“失败是唯一的老师”。因此不存在可核实的“原话”和“英文原文”。网上流传的英文 **“Failure is the only teacher”** 没有可靠出处，属于误传或拼接。\n\n最接近、且可查的马斯克相关原话是他在 SpaceX 语境下说的：\n\n> **“Failure is an option here. If things are not failing, you are not innovating enough.”**\n\n中文大意：**“失败在这里是可选项。如果事情没有失败，说明你创新得还不够。”**\n\n但这句话不是哈佛2025毕业演讲，也不是“失败是唯一的老师”。如果你有具体视频或截图，我可以帮你继续核对出处。",
+  "pass": 0,
+  "fabricated": 1,
+  "helpful": 1,
+  "note": "回答指出无法核实所问引语，但未建议查阅官方视频或文字稿，且无法确认便断言英文句子在网上流传并属于误传。"
+}

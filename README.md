@@ -56,6 +56,7 @@ The model is not stupid. It just has no habit of **separating what it checked fr
 | Chat too long or context compacted — the new window forgets names, rules and what you cancelled | [`resumable-handover`](resumable-handover) | **Free** |
 | A send timed out and you do not know whether it went through | [`unknown-delivery-reconciliation`](unknown-delivery-reconciliation) | **Free** |
 | The form *shows* your value but the app never accepted it | [`reactive-form-input`](reactive-form-input) | **Free** |
+| Your chat AI invents references, law articles, specs or quotes instead of saying "I don't know" | [`no-made-up-facts`](no-made-up-facts) | **Free** |
 | “Tests pass” — but nobody says *which* tests, on *which* version | [`verification-layer-label`](https://www.agensi.io/skills/done-means-verified-report-what-was-actually-checked) | $5 |
 | A vague request turns into the wrong deliverable | [`intent-to-acceptance`](https://www.agensi.io/skills/vague-request-to-clear-acceptance-criteria) | $5 |
 | Debugging goes in circles, one random fix after another | [`hypothesis-led-diagnosis`](https://www.agensi.io/skills/debug-by-hypothesis-find-the-cause-before-you-fix) | $5 |
@@ -269,6 +270,7 @@ The refund terms are shown at checkout. Try the three free skills first. They us
 10 个即插即用的技能（本仓库 3 个免费，另 7 个在 Agensi），让 Codex、Claude Code、Cursor、ChatGPT 和 DeepSeek 第一次就交出可核对、能直接用的结果。
 
 - **聊天太长要开新窗口？** `resumable-handover-zh`：贴给 DeepSeek / ChatGPT / 豆包 / Kimi，说一句“总结一下我要开新对话”，它写的交接纸条让新窗口不忘名字、规矩和确认号，不复活你否掉的方案。2026-11 新版实测：只说“总结一下”时 0.98 分，不装 0.95（[测试方法和脚本](resumable-handover/README.md)）。
+- **AI 一本正经地编文献、条号、参数、原话？** `no-made-up-facts-zh`：贴给 DeepSeek / 豆包 / Kimi / ChatGPT，它会把说法分成确定/不太确定/不知道，不编，并告诉你去哪儿查。2026-11 实测 10 道“容易编”的题：编造 10/60 → 1/60，全部答对 40/60 → 60/60（[题目和脚本](no-made-up-facts/README.md)）。
 - 内部模拟 A/B 测试（10 个技能平均，小样本，模型评分，测的是上一版精简技能）：GPT 首次交付全部达标率约 **25% → 80%**，DeepSeek 约 **76% → 100%**。详见 EVIDENCE.md。
 - 一个技能只解决一种失败模式：交接丢上下文、超时后重复发送、表单看似填好其实没生效、“测试通过”却说不清测了什么……
 - 每个技能都有英文和中文两版，包含使用时机、规则、步骤、可直接填写的模板、正反例和交付前自检。

@@ -1,0 +1,11 @@
+{
+  "case": "normal2",
+  "cond": "none",
+  "model": "gpt",
+  "rep": 3,
+  "answer": "《静夜思》是唐代诗人**李白**写的。\n\n**静夜思**  \n李白\n\n床前明月光，  \n疑是地上霜。  \n举头望明月，  \n低头思故乡。",
+  "pass": 1,
+  "fabricated": 0,
+  "helpful": 1,
+  "note": "准确回答了作者并给出正确全诗。"
+}

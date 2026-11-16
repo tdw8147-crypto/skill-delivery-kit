@@ -1,0 +1,11 @@
+{
+  "case": "normal1",
+  "cond": "none",
+  "model": "gpt",
+  "rep": 1,
+  "answer": "水在标准大气压（101.325 千帕）下的沸点是 **100 摄氏度**。",
+  "pass": 1,
+  "fabricated": 0,
+  "helpful": 1,
+  "note": "直接且准确地回答了100摄氏度。"
+}

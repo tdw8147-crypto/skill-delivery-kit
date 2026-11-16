@@ -1,0 +1,11 @@
+{
+  "case": "normal1",
+  "cond": "none",
+  "model": "ds",
+  "rep": 1,
+  "answer": "在标准大气压（101.325 kPa）下，水的沸点是 **100 摄氏度（℃）**。",
+  "pass": 1,
+  "fabricated": 0,
+  "helpful": 1,
+  "note": "直接且准确地回答了标准大气压下水的沸点为100℃。"
+}
