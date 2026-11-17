@@ -7,6 +7,8 @@
   10 drop-in skills (3 free in this repo, 7 paid on Agensi) that make Codex, Claude Code, Cursor, ChatGPT and DeepSeek hand over real, checkable work on the first try.
 </p>
 
+<p align="center"><b>中文用户：</b>DeepSeek / 豆包 / ChatGPT 聊久了换窗口就失忆？一本正经编文献？两个免费中文技能，复制粘贴就能用 → <a href="#-中文">看中文说明</a></p>
+
 <p align="center">
   <a href="EVIDENCE.md"><img src="https://img.shields.io/badge/GPT_first--try_pass-25%25_%E2%86%92_80%25-2ea44f?style=for-the-badge" alt="GPT first-try pass 25% to 80%"></a>
   <a href="EVIDENCE.md"><img src="https://img.shields.io/badge/DeepSeek-76%25_%E2%86%92_100%25-2ea44f?style=for-the-badge" alt="DeepSeek 76% to 100%"></a>
@@ -216,7 +218,7 @@ Round-4 internal A/B test: same model, same task, with vs without the skill. Fiv
 | verification-layer-label | 69% → **100%** | 91% → **100%** |
 | **Average** | **25% → 80%** | **76% → 100%** |
 
-**Update, Nov 2026:** `resumable-handover` was rewritten (v4) and re-tested on 6 new chat + agent scenarios against no skill and a popular competitor: with the user only saying “summarize this”, 0.98 vs 0.95 (no skill). Method, transcripts and scripts: [resumable-handover](resumable-handover/README.md).
+**Update, Nov 2026 — long-chat test:** `resumable-handover` (v4) on DeepSeek, 4 long real-project chats (~23k Chinese characters each), the user moves to a new window **twice** and only ever says “summarize this”; the third window answers 370 follow-up questions. Correct answers: **63% without → 78% with the skill**; on the scenario added after the skill was written, **51% → 87%**. Small sample, model-graded; [method, script and limits](resumable-handover/eval-fish/README.md).
 
 Metric: first formal delivery meets *all* acceptance criteria. Measured on the earlier compact edition of each skill (v0.2); this v1.0 adds templates, examples and checklists on top of the same rules and has not been re-measured yet. Low-cost models (gpt-6.1-terra low, deepseek-v4.1-flash), graded by a model, small sample. This is not a guarantee; read [EVIDENCE.md](EVIDENCE.md) for the denominators, censored samples and what we did **not** test.
 
@@ -269,7 +271,7 @@ The refund terms are shown at checkout. Try the three free skills first. They us
 **让编码 AI 别再“说做完了”却什么都没验证。**
 10 个即插即用的技能（本仓库 3 个免费，另 7 个在 Agensi），让 Codex、Claude Code、Cursor、ChatGPT 和 DeepSeek 第一次就交出可核对、能直接用的结果。
 
-- **聊天太长要开新窗口？** `resumable-handover-zh`：贴给 DeepSeek / ChatGPT / 豆包 / Kimi，说一句“总结一下我要开新对话”，它写的交接纸条让新窗口不忘名字、规矩和确认号，不复活你否掉的方案。2026-11 新版实测：只说“总结一下”时 0.98 分，不装 0.95（[测试方法和脚本](resumable-handover/README.md)）。
+- **聊天太长要开新窗口？** `resumable-handover-zh`：贴给 DeepSeek / ChatGPT / 豆包 / Kimi，说一句“总结一下我要开新对话”，它写的交接纸条让新窗口不忘名字、规矩和确认号，不复活你否掉的方案。2026-11 长对话实测（DeepSeek，约 2.3 万字的真实项目聊天，换两次窗口、每次只说“总结一下”，再问 370 道题）：答对 **63% → 78%**；技能写好之后才加的新场景 **51% → 87%**（[测法、脚本和局限](resumable-handover/eval-fish/README.md)）。
 - **AI 一本正经地编文献、条号、参数、原话？** `no-made-up-facts-zh`：贴给 DeepSeek / 豆包 / Kimi / ChatGPT，它会把说法分成确定/不太确定/不知道，不编，并告诉你去哪儿查。2026-11 实测 10 道“容易编”的题：编造 10/60 → 1/60，全部答对 40/60 → 60/60（[题目和脚本](no-made-up-facts/README.md)）。
 - 内部模拟 A/B 测试（10 个技能平均，小样本，模型评分，测的是上一版精简技能）：GPT 首次交付全部达标率约 **25% → 80%**，DeepSeek 约 **76% → 100%**。详见 EVIDENCE.md。
 - 一个技能只解决一种失败模式：交接丢上下文、超时后重复发送、表单看似填好其实没生效、“测试通过”却说不清测了什么……
