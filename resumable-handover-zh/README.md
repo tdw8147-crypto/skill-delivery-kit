@@ -61,3 +61,7 @@ npx skills add tdw8147-crypto/skill-delivery-kit --skill resumable-handover-zh
 
 - **[7 个合集 US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)**（单个 US$5），在 [Agensi](https://www.agensi.io/creators/td-w) 购买
 - 完整清单和其它免费技能：[仓库首页](../README.md)
+
+## 若溪的爱发电
+
+作者克若溪（B站 / 抖音“克若溪-呀”）。更多给 DeepSeek / 豆包 / ChatGPT 聊天用户的中文小纸条，在爱发电：[afdian.com/a/keruoxi](https://afdian.com/a/keruoxi)

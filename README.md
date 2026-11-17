@@ -8,6 +8,7 @@
 </p>
 
 <p align="center"><b>中文用户：</b>DeepSeek / 豆包 / ChatGPT 聊久了换窗口就失忆？一本正经编文献？两个免费中文技能，复制粘贴就能用 → <a href="#-中文">看中文说明</a></p>
+<p align="center">作者 <b>克若溪</b>（B站 / 抖音“克若溪-呀”）· 中文聊天小纸条合集在爱发电：<a href="https://afdian.com/a/keruoxi">afdian.com/a/keruoxi</a></p>
 
 <p align="center">
   <a href="EVIDENCE.md"><img src="https://img.shields.io/badge/GPT_first--try_pass-25%25_%E2%86%92_80%25-2ea44f?style=for-the-badge" alt="GPT first-try pass 25% to 80%"></a>
@@ -277,6 +278,7 @@ The refund terms are shown at checkout. Try the three free skills first. They us
 - 一个技能只解决一种失败模式：交接丢上下文、超时后重复发送、表单看似填好其实没生效、“测试通过”却说不清测了什么……
 - 每个技能都有英文和中文两版，包含使用时机、规则、步骤、可直接填写的模板、正反例和交付前自检。
 - 本仓库免费提供 3 个技能（MIT 许可）；另外 7 个付费技能单品 US$5，[7 个合集 US$14.90](https://www.agensi.io/bundles/skill-delivery-kit-complete-bundle)，在 Agensi 购买。
+- **给聊天用户的中文合集**《若溪的AI聊天小纸条》（改写不变味、先问清楚、总结不丢重点等，附实测对比），作者克若溪，在爱发电：[afdian.com/a/keruoxi](https://afdian.com/a/keruoxi)。
 - 每个免费技能文件夹里都有 `EXAMPLES.md`：一组完整的真实测试对比（输入资料、两份原始输出、评分项）。
 - 安装：`npx skills add tdw8147-crypto/skill-delivery-kit`（需要 Node.js）；或手动复制技能文件夹到 `~/.claude/skills/`（Claude Code）或 `~/.agents/skills/`（Codex）；聊天应用直接粘贴 `SKILL.zh.md` 的内容。
 - 中文版可以单独安装，技能名以 `-zh` 结尾，例如 `npx skills add tdw8147-crypto/skill-delivery-kit --skill resumable-handover-zh`。中文版和英文版装一个就够。
