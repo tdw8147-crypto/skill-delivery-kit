@@ -42,6 +42,10 @@ Real chat users talk for a long time, change their minds a lot, move windows mor
 
 Honest limits: after two moves almost no run gets every question right (2/40 with, 0/40 without) — the skill loses less, it does not lose nothing. Most common misses: *which* option was cancelled, and attempts that already failed. Skim the handover yourself in the new window. [Method and script](eval-fish/README.md)
 
+## Viewer-style scenarios: novel roleplay / exam study plan / budget app (Nov 17 2026, DeepSeek)
+
+Same two-move setup, but with everyday chat topics instead of our own project chats; all conversations are public. Follow-ups answered correctly: **71% without → 80% with the skill**. One regression: "plan my next week" — with the skill DeepSeek asks clarifying questions instead of planning (2/10 → 0/10). [Method, per-question table, transcripts](eval-viewer/README.md)
+
 ## Earlier test: short chats, one window move
 
 6 realistic scenarios — 3 chat (co-writing a novel, CV rewrite, family trip) and 3 agent (bug fix with an unknown DB migration, scheduled video publishing, a 1,000-photo batch rename stopped halfway). Each conversation hides changed minds, cancelled items, undecided items and an action with unknown outcome. A fresh window sees **only** the handover and answers 6–7 follow-up questions phrased like a real user ("just book me a hotel then"). A blind grader checks every answer against the original conversation. GPT-6.1 and DeepSeek-v4.1, 2 runs each.
