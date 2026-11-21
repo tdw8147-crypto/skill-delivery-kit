@@ -7,6 +7,7 @@
   10 drop-in skills (3 free in this repo, 7 paid on Agensi) that make Codex, Claude Code, Cursor, ChatGPT and DeepSeek hand over real, checkable work on the first try.
 </p>
 
+<p align="center"><b>AI 满嘴“不是……而是……”、满屏加粗分点写申论？</b>贴一张 <a href="plain-talk-card">说人话卡</a>，手机网页都能用、什么都不用装（DeepSeek 50 题实测：平均 707 字 → 45 字）</p>
 <p align="center"><b>中文用户：</b>DeepSeek / 豆包 / ChatGPT 聊久了换窗口就失忆？一本正经编文献？两个免费中文技能，复制粘贴就能用 → <a href="#-中文">看中文说明</a></p>
 <p align="center">作者 <b>克若溪</b>（B站 / 抖音“克若溪-呀”）· 中文聊天小纸条合集在爱发电：<a href="https://afdian.com/a/keruoxi">afdian.com/a/keruoxi</a></p>
 
@@ -272,6 +273,7 @@ The refund terms are shown at checkout. Try the three free skills first. They us
 **让编码 AI 别再“说做完了”却什么都没验证。**
 10 个即插即用的技能（本仓库 3 个免费，另 7 个在 Agensi），让 Codex、Claude Code、Cursor、ChatGPT 和 DeepSeek 第一次就交出可核对、能直接用的结果。
 
+- **AI 满嘴“不是……而是……”、满屏加粗、分点写申论？** [说人话卡](plain-talk-card)：手机 App、网页版都能用，什么都不用装，复制一段话贴在对话开头。2026-11 DeepSeek 网页版 50 个日常问题实测：平均每条 707 字 → 45 字，“不是……而是……” 22 次 → 0，加粗 47/50 → 0；同一对话连聊 20 轮不反弹。
 - **聊天太长要开新窗口？** `resumable-handover-zh`：贴给 DeepSeek / ChatGPT / 豆包 / Kimi，说一句“总结一下我要开新对话”，它写的交接纸条让新窗口不忘名字、规矩和确认号，不复活你否掉的方案。2026-11 长对话实测（DeepSeek，约 2.3 万字的真实项目聊天，换两次窗口、每次只说“总结一下”，再问 370 道题）：答对 **63% → 78%**；技能写好之后才加的新场景 **51% → 87%**（[测法、脚本和局限](resumable-handover/eval-fish/README.md)）。
 - **AI 一本正经地编文献、条号、参数、原话？** `no-made-up-facts-zh`：贴给 DeepSeek / 豆包 / Kimi / ChatGPT，它会把说法分成确定/不太确定/不知道，不编，并告诉你去哪儿查。2026-11 实测 10 道“容易编”的题：编造 10/60 → 1/60，全部答对 40/60 → 60/60（[题目和脚本](no-made-up-facts/README.md)）。
 - 内部模拟 A/B 测试（10 个技能平均，小样本，模型评分，测的是上一版精简技能）：GPT 首次交付全部达标率约 **25% → 80%**，DeepSeek 约 **76% → 100%**。详见 EVIDENCE.md。
